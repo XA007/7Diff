@@ -1,0 +1,68 @@
+.base {
+  display: flex;
+  justify-content: center;
+  max-width: 1240px;
+  min-width: 630px;
+  flex-direction: column;
+  margin: auto;
+}
+.gameBase{
+  display: flex;
+  font-family: Roboto,Arial, sans-serif;
+}
+
+.gamesListes {
+  margin: auto;
+  display: flex;
+}
+
+.game-mode {
+  font-weight: bold;
+  color: #999;
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 0.027em;
+}
+
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: 1px solid #08c;
+  color: #08c;
+  background: white;
+  margin-right: 15px;
+  padding: 3px 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  color: white;
+  background: #08c;
+  box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.3);
+}
+/**/
+.view {
+  padding: 30px;
+}
+
+.simpleView {
+  display: inline-block;
+}
+
+.freeView {
+  display: inline-block;
+}
+/**/
+.gameViewName {
+  margin: 30px;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 0.027em;
+  box-shadow: 1px 3px 11px #00000011;
+  border-radius: 7px 11px 11px 7px;
+  padding: 10px 20px;
+  border-left: 5px solid #45aaf2;
+  background: white;
+}

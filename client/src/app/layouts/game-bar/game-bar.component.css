@@ -1,0 +1,94 @@
+.gameViewNavBar {
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #eee;
+  font-family: roboto, arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  top: 0;
+}
+
+.gameBarContainer {
+  height: 100%;
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.whiteBackground {
+  background: white;
+}
+
+#gameName {
+  font-size: 17px;
+}
+
+.timer {
+  font-size: 27px;
+}
+
+.navBlocTitle {
+  font-size: 14px;
+  color: silver;
+}
+
+.chronometer {
+  color: #333;
+  text-align: center;
+}
+
+.userScore {
+  color:#333;
+}
+
+#userName{
+  color: white;
+  background-color: #3498db;
+  padding: 3px 18px;
+  border-radius: 25px;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.navBlocs {
+  width: 33.3333%;
+}
+
+.navBlocTitle {
+  font-size: 14px;
+  color: silver;
+  margin-bottom: 3px;
+}
+
+.textAlignRight {
+  text-align: right;
+}
+
+.signedInAs {
+  font-size: 14px;
+  color: silver;
+}
+
+.username {
+  color: #333;
+}
+
+.logo-img{
+  height: 60%;
+}
+
+.logo{
+  height: 66px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}

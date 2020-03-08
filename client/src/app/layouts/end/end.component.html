@@ -1,0 +1,24 @@
+<div class="end-overlay">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+        crossorigin="anonymous">
+  <div class="end-container">
+    <div class="end-position">
+      <!--first Position-->
+      <i *ngIf="stars[0]; else emptyStar" class="icon fas fa-star"></i>
+      <ng-template #emptyStar><i class="icon far fa-heart"></i></ng-template>
+      <!--second Position-->
+      <i *ngIf="stars[1]; else emptyStar" class="icon fas fa-star"></i>
+      <ng-template #emptyStar><i class="icon far fa-star"></i></ng-template>
+      <!--third Position-->
+      <i *ngIf="stars[2]; else emptyStar" class="icon fas fa-star"></i>
+      <ng-template #emptyStar><i class="icon far fa-star"></i></ng-template>
+    </div>
+    <div class="end-time">{{time}}</div>
+    <div class="end-message">{{message}}</div>
+    <div class="end-action">
+      <a *ngIf="tryAgain" class="end-btn tryAgain" routerLink="">Try again</a>
+      <a class="end-btn goHome" routerLink="/home/{{username}}">Go Home</a>
+    </div>
+  </div>
+</div>

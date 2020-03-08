@@ -1,0 +1,25 @@
+<div class="topContainer">
+  <div class="container1">
+    <div class="teamCards">
+      <div class="teamCard" *ngFor="let member of members">
+        <div class="picContainer">
+          <div class="picture" [style.backgroundImage]="'url('+ member.profilePictureURL +')'"></div>
+        </div>
+        <div class= "fullName">{{member.fullName}}</div>
+        <div class= "matricule">{{member.matricule}}</div>
+      </div>
+    </div>
+  </div>
+  <div class="rip">
+    WW3 did not happen, right? I guess it did for these 3 students.
+    After loosing a member each sprint, who would have thought these guys would still stand? With a Medal of Honor.
+    <br/>
+    In memory of <span class="deadMember">Anoir</span>, <span class="deadMember">Thomas</span> and <span class="deadMember">Yuri</span>.
+    <br/>
+    <b>RIP</b>
+  </div>
+  <div class="goBack">
+    <a routerLink="/signin" class="sign-in-BTN"> Sign in </a>
+  </div>
+
+</div>

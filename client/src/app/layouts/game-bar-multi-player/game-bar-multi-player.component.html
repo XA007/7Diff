@@ -1,0 +1,11 @@
+<div class="gameViewNavBar top whiteBackground">
+  <div class="gameBarContainer">
+
+    <app-score-section [score]="game.player.score" [userName]="game.player.username" [isRight]="false"></app-score-section>
+
+    <app-timer [gameName]="game.gameName" [timer]="chronoValue"></app-timer>
+
+    <app-score-section [score]="game.opponent.score" [userName]="game.opponent.username" [isRight]="true"></app-score-section>
+
+  </div>
+</div>

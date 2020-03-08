@@ -1,0 +1,21 @@
+<app-game-loader *ngIf="!isReady" [gameName]="'testGame'"></app-game-loader>
+
+<div class="gameView" #gamView>
+  <app-game-bar-multi-player [game]="multiPlayer.game"
+                             [chronoValue]="multiPlayer.game.timer">
+  </app-game-bar-multi-player>
+  <div class="scene">
+    <div id="canvas">
+      <div class="error" #error> ERROR 😤</div>
+      <canvas #canvasOriginal (messageEvent)="receiveClickEvent($event)" appMouseClick ></canvas>
+    </div>
+  </div>
+  <div class="gameMetaData">
+
+    <!--Event's log-->
+    <app-events-log [eventsLog]="multiPlayer.game.eventsLog" ></app-events-log>
+    <!--Leader board-->
+    <app-leader-board [gameCard]="multiPlayer.game.leaderBoard"></app-leader-board>
+
+  </div>
+</div>

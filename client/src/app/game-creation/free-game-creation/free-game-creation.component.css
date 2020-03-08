@@ -1,0 +1,13 @@
+#checkbox{
+  left:0;
+}
+
+#notification{
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+.info{
+  font-weight: lighter;
+}

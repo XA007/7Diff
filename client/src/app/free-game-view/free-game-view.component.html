@@ -1,0 +1,25 @@
+<app-game-loader *ngIf="showLoader" [gameName]="game.gameName"></app-game-loader>
+
+<div class="gameView" #gamView>
+  <app-game-bar [username]="game.userName"
+                [gameName]="game.gameName"
+                [chronoValue]="game.chronoValue"
+                [score]="freeGameView.score">
+  </app-game-bar>
+
+  <div class="scene">
+    <div id="canvas">
+      <div class="error" #error> ERROR 😤</div>
+      <canvas #canvasOriginal (messageEvent)="receiveClickEvent($event)" appMouseClick ></canvas>
+    </div>
+  </div>
+
+  <div class="gameMetaData">
+
+    <!--Event's log-->
+    <app-events-log [eventsLog]="game.eventsLog" ></app-events-log>
+    <!--Leader board-->
+    <app-leader-board [gameCard]="game.soloMode"></app-leader-board>
+
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="gameViewNavBar top whiteBackground">
+  <div class="gameBarContainer">
+
+    <div class="player navBlocs">
+        <div class="logo">
+          <img src="../../assets/logo/logo.png" class="logo-img">
+        </div>
+    </div>
+    
+    <app-timer [timer]="chronoValue" [gameName]="gameName"></app-timer>
+
+    <div class="score navBlocs textAlignRight">
+      <div class="navBlocTitle"> <span id="userName"> {{username}} </span> </div>
+      <div class="userScore"><app-score-status [score]="score" [isMultiPlayer]="false"></app-score-status></div>
+    </div>
+
+  </div>
+</div>

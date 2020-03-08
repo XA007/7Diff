@@ -1,0 +1,18 @@
+<head>
+  <title>adminPage</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism.css" />
+</head>
+
+<div class="header-container">
+  <nav class="adminNavBar">
+    <div class="ViewName">Admin view</div>
+    <div class="actions">
+      <span class="btnDirective">Add a game in</span>
+      <button class="addBtn left-half" (click)="openSimpleGameCreation()">Simple view</button>
+      <button class="addBtn right-half" (click)="openFreeGameCreation()">Free view</button>
+    </div>
+  </nav>
+</div>
+
+<app-home></app-home>

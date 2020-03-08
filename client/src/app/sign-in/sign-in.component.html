@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="sign-in">
+
+    <div class="project">
+
+      <div class="project-name">
+        <img src="../../assets/logo/logo.png">
+      </div>
+      <div class="project-desc">
+        Spot the 7 differences
+      </div>
+
+    </div>
+
+    <div class="sign-in-form">
+
+      <div>
+        <div class="inputContainer">
+        <input placeholder="username" [(ngModel)]="this.userName" maxlength="8">
+        </div>
+      </div>
+      <div class="signIn-actions">
+        <div>
+          <button class="btn btn-connect" (click)="connect(this.userName)">Connect</button>
+          <button class="btn-lazy btn" (click)="makeUserName()">I'm so damn lazy</button>
+        </div>
+        <div id="notification">
+          <div *ngIf="isUserNameValid">
+            User name must contains only alphanumerics,
+            be between 4 and 8 characters.
+          </div>
+          {{message}}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="note">
+  <a class="team" routerLink="/about">Team 111</a>
+  Please note that this project is optimized for <b>FireFox</b> and <b>Safari</b>. Built by a team of <b>3</b> not <b>6</b>.
+</div>

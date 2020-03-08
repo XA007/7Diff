@@ -1,0 +1,4 @@
+<div class="score navBlocs" [ngClass]="{true: 'right', false: 'left'}[isRight]">
+  <div class="navBlocTitle" [ngClass]="{true: 'opponent', false: 'player'}[isRight]"> {{userName}} </div>
+  <div class="userScore"><app-score-status [score]="score" [isMultiPlayer]="true" [isPlayerTwo]="isRight"></app-score-status></div>
+</div>

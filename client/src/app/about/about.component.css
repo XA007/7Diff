@@ -1,0 +1,96 @@
+.container1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.picture {
+  width: 160px;
+  height: 160px;
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 1px solid #eee;
+}
+
+.teamCard {
+  display: inline-block;
+  margin: 50px;
+}
+
+.picContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.fullName {
+  text-align: center;
+  color: #333;
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0 5px 0;
+}
+
+.matricule {
+  text-align: center;
+  color: silver;
+  font-size: 18px;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  padding-top: 320px;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: Roboto, arial, sans-serif;
+}
+
+.rip {
+  width: 810px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  line-height: 28px;
+  text-align: center;
+  color: #404040bd;
+  font-family: Roboto, arial, sans-serif;
+}
+
+.deadMember {
+  color: #0099ddc7;
+  font-weight: bold;
+}
+
+.goBack{
+  margin: 50px 20px 20px 20px;
+}
+
+.sign-in-BTN{
+  padding: 10px 20px;
+  background: white;
+  color: #09d;
+  border: 1px solid #09d;
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: Roboto, Arial, sans-serif;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.sign-in-BTN:hover {
+  background-color: #09D;
+  color: white;
+  box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.2);
+}

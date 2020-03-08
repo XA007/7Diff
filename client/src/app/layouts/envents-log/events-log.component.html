@@ -1,0 +1,10 @@
+<div class="gameBoard">
+  <div class="boardContainer">
+      <div class="boardTitle"> Events log </div>
+      <div id="eventsLog" class="eventsLog" #events [scrollTop]="events.scrollHeight">
+
+        <div class="event" *ngFor="let event of eventsLog">{{event}}</div>
+
+      </div>
+  </div>
+</div>

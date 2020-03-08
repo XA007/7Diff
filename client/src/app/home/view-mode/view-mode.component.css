@@ -1,0 +1,16 @@
+.view {
+  padding: 30px;
+}
+
+.gameViewName {
+  margin: 30px;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 0.027em;
+  box-shadow: 1px 3px 11px #00000011;
+  border-radius: 7px 11px 11px 7px;
+  padding: 10px 20px;
+  border-left: 5px solid #45aaf2;
+  background: white;
+  width: 460px;
+}

@@ -1,0 +1,6 @@
+<div class="scoreView">
+  <div class="difference-score"
+       *ngFor="let c of circles; let i = index"
+       [ngClass]="{true:getCssClass(), false:''}[i < score]">
+  </div>
+</div>

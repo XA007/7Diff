@@ -1,0 +1,65 @@
+<div class="card">
+  <div class="box">
+
+    <div class="image">
+      <!--game's image-->
+      <div class="img-background" id="imgBg" [style.backgroundImage]="'url('+ game.imageUrl +')'"></div>
+    </div>
+
+    <div class="meta-data">
+      <div class="game-desc">
+        <div class="game-name">
+          {{ game.name }}
+        </div>
+        <div class="game-scores">
+          <div class="list-solo">
+            <div class="game-mode">Solo</div>
+
+            <ul class="podium">
+              <!--generation of the three best performances of the solo mode-->
+              <li class="classement" *ngFor="let player of game.soloMode">
+                <div class="player"><div class="position">{{ player.position }}</div> {{ player.username}}</div>
+                <div class="time">{{ player.time }}</div>
+              </li>
+
+            </ul>
+
+          </div>
+          <div class="list-multi">
+            <div class="game-mode">OneVsOne</div>
+
+            <ul class="podium">
+              <!--generation of the three best performances of the multiPlayers mode-->
+              <li class="classement" *ngFor="let player of game.multiPlayer">
+                <div class="player"><div class="position">{{ player.position }}</div> {{ player.username}}</div>
+                <div class="time">{{ player.time }}</div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+
+        <!-- buttons for admin View -->
+        <div *ngIf="isAdmin" class="button-solo">
+          <a class="button delete-btn" (click)="manageLeftClick()">  Delete </a>
+        </div>
+
+        <div *ngIf="isAdmin" class="button-oneVsOne">
+          <a class="button reinitialize-btn" (click)="manageRightClick()"> Reinitialize </a>
+        </div>
+        <!-- buttons for home view-->
+        <div *ngIf="!isAdmin" class="button-solo">
+          <a class="button" routerLink="{{'/' + viewName + '/' + game.name + '/' + username }}"> Play </a>
+        </div>
+        <div *ngIf="!isAdmin" class="button-oneVsOne">
+          <a class="button" routerLink="{{'/waiting/' + game.name + '/' + username }}" (click)="createOrJoinMultiPlayerGame(game.name, username)"> {{game.multiPlayerButtonName}} </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>

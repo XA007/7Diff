@@ -1,0 +1,7 @@
+<div class="view">
+  <div class="gameViewName"> {{viewName}} </div>
+  <div class="cards">
+    <app-card [username]="username"
+      *ngFor="let game of games" [game]="game" [viewName]="viewName"></app-card>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="base">
+
+    <app-navigation-bar [username]="username"
+                        (click)="removeUser()">
+    </app-navigation-bar>
+
+    <div class="gameBase">
+      <div class="gamesListes">
+          <div class="simpleView" >
+            <!--simple view-->
+            <app-view-mode [viewName]="'SimpleView'" [username]="username" [games]="simpleView"></app-view-mode>
+
+          </div>
+
+          <div class="freeView">
+            <!--free view-->
+            <app-view-mode [viewName]="'FreeView'" [username]="username" [games]="freeView"></app-view-mode>
+
+          </div>
+      </div>
+  </div>
+</div>

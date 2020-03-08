@@ -1,0 +1,41 @@
+import { Container } from "inversify";
+import { Application } from "./app";
+import {FreeViewGameDatabase} from "./database/freeViewGameDatabase";
+import {SimpleViewGameDatabase} from "./database/simpleViewGameDatabase";
+import {UserDatabase} from "./database/userDatabase";
+import { Routes } from "./routes";
+import {FormRoutes} from "./routes/form";
+import {FreeViewGameRoutes} from "./routes/freeViewGames";
+import {SimpleViewGameRoutes} from "./routes/simpleViewGames";
+import {UserRoutes} from "./routes/users";
+import { Server } from "./server";
+import {SocketService} from "./services/SocketService";
+import {FreeViewDifference} from "./services/freeViewDifferenceService";
+import {GameService} from "./services/gameService";
+import {ObjectCreatorService} from "./services/objectCreatorService";
+import {ObjectModificatorService} from "./services/objectModificatorService";
+import {SimpleViewDifference} from "./services/simpleViewDifferenceService";
+import {UpdateLeaderboardRoute} from "./services/updateLeaderboardService";
+import Types from "./types";
+
+const container: Container = new Container();
+
+container.bind(Types.Server).to(Server);
+container.bind(Types.Application).to(Application);
+container.bind(Types.Routes).to(Routes);
+container.bind(Types.UserDatabase).to(UserDatabase);
+container.bind(Types.Form).to(FormRoutes.Form);
+container.bind(Types.Users).to(UserRoutes.Users);
+container.bind(Types.SimpleViewGameDatabase).to(SimpleViewGameDatabase);
+container.bind(Types.SimpleViewGames).to(SimpleViewGameRoutes.SimpleViewGames);
+container.bind(Types.FreeViewGames).to(FreeViewGameRoutes.FreeViewGames);
+container.bind(Types.FreeViewGameDatabase).to(FreeViewGameDatabase);
+container.bind(Types.GameService).to(GameService);
+container.bind(Types.UpdateLeaderBoard).to(UpdateLeaderboardRoute.UpdateLeaderboardService);
+container.bind(Types.SocketService).to(SocketService).inSingletonScope();
+container.bind(Types.ObjectCreatorService).to(ObjectCreatorService);
+container.bind(Types.ObjectModificationService).to(ObjectModificatorService);
+container.bind(Types.FreeViewDifference).to(FreeViewDifference.FreeViewDifferenceService);
+container.bind(Types.SimpleViewDifferenceService).to(SimpleViewDifference.SimpleViewDifferenceService);
+
+export { container };

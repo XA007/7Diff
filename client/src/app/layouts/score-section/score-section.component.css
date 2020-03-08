@@ -1,0 +1,25 @@
+.navBlocTitle {
+  font-size: 13px;
+  letter-spacing: 0.027em;
+  color: white;
+  margin-left: 5px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 3px;
+}
+
+.navBlocTitle.player {
+  background-color: #3498db;
+}
+
+.navBlocTitle.opponent {
+  background-color: #F44336;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}

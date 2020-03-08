@@ -1,0 +1,174 @@
+.card{
+  margin: 60px 30px;
+  font-family: Roboto,Arial, sans-serif;
+  border-radius: 50%;
+  border: none;
+}
+
+.box{
+  display: flex;
+  height: 250px;
+  width: 500px;
+  background-color: white;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 3px 3px 15px 0 rgba(37,38,39,0.09);
+  transition: 0.25s;
+}
+
+.box:hover {
+  box-shadow: 9px 11px 27px rgba(0, 0, 0, 0.21);
+  cursor: default;
+}
+
+.image {
+  height: 100%;
+  width: 45%;
+}
+
+.img-background {
+  background-color: #fafafa;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.meta-data {
+  display: flex;
+  width: 55%;
+  padding: 20px 10px 20px 20px;
+  font-family: roboto, arial, sans-serif;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: normal;
+}
+
+.buttons {
+  display: inline-flex;
+  position: relative;
+}
+
+.game-scores {
+  display: flex;
+  justify-content: space-around;
+}
+
+.game-name{
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.podium {
+  list-style-type:none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.list-solo {
+  width: 50%;
+  display: inline-block;
+}
+
+.list-multi {
+  width: 50%;
+  display: inline-block;
+}
+
+.classement {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.player {
+  color: #333;
+}
+.position {
+  font-weight: bold;
+  font-size: 12px;
+  background: #34495e;
+  height: 17px;
+  width: 17px;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  margin-right: 7px;
+  line-height: 18px;
+}
+
+.time {
+  font-size: 11px;
+  color: #09d;
+  padding-left: 28px;
+  line-height: 11px;
+}
+
+.game-mode {
+  font-weight: bold;
+  color: #999;
+  margin-top: 10px;
+  font-size: 14px;
+  letter-spacing: 0.027em;
+}
+
+.reinitialize-btn {
+  border: 1px solid #95a5a6 !important;
+  color: #95a5a6 !important;
+}
+
+.reinitialize-btn:hover{
+  background-color: #95a5a6 !important;
+  color: white !important;
+  border-color: #95a5a6 !important;
+}
+
+.delete-btn{
+  border: 1px solid #ff4757 !important;
+  color: #ff4757 !important;
+}
+
+.delete-btn:hover{
+  background-color: #ff4757 !important;
+  color: white !important;
+  border-color: #ff4757 !important;
+}
+
+.button {
+  background: white;
+  border: 1px solid #0088cc5c;
+  color: #0088cce8;
+  border-radius: 50px;
+  padding: 5px 20px;
+  font-size: 14px;
+  margin-right: 10px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.button:hover {
+  color: white;
+  cursor: pointer;
+  background: #08c;
+  box-shadow: 1px 3px 11px rgba(0, 0, 0, 0.3);
+}
+
+.view {
+  display: inline-block;
+  padding: 30px;
+}
+
+.free {
+  color: #3E2723;
+}
+
+.simple {
+  color: #233b56;
+}
+
+.gameViewName {
+  margin: 100px 30px 0px 30px;
+  font-size: 57px;
+  font-weight: bold;
+  letter-spacing: 0.027em;
+  text-shadow: 1px 3px 11px #00000011;
+}

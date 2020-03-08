@@ -1,0 +1,24 @@
+<app-game-loader *ngIf="!isReady" [gameName]="'testGame'"></app-game-loader>
+
+<div class="gameView" #gamView>
+  <app-game-bar-multi-player [game]="simpleGame.game"
+                             [chronoValue]="simpleGame.game.timer">
+  </app-game-bar-multi-player>
+  <div class="gameBord">
+    <!--original image and  modified image-->
+    <div class="imagesContainer">
+      <!--original Image-->
+      <canvas (messageEvent)="receiveClickEvent($event)" appMouseClick #canvasOriginal ></canvas>
+      <!--modified Image-->
+      <canvas (messageEvent)="receiveClickEvent($event)" appMouseClick #canvasModified ></canvas>
+    </div>
+    <div class="gameMetaData">
+      <!--Event's log-->
+      <app-events-log [eventsLog]="simpleGame.game.eventsLog" ></app-events-log>
+      <!--Leader board-->
+      <app-leader-board [gameCard]="simpleGame.game.leaderBoard"></app-leader-board>
+    </div>
+    <div class="error" #error> ERROR 😤</div>
+  </div>
+
+</div>

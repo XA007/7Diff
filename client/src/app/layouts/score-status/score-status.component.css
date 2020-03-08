@@ -1,0 +1,22 @@
+.difference-score{
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  margin: 5px 0 5px 5px;
+  display: inline;
+  transition: 1s;
+}
+
+.difference-score.playerOneWinClick {
+  background-color: #3498db;
+}
+
+.difference-score.playerTwoWinClick {
+  background-color: #F44336;
+}
+
+.scoreView{
+  display: flex;
+  justify-content: flex-end;
+}

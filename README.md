@@ -20,3 +20,5 @@ To start the server, just go to the `server` folder and run the command `npm sta
 To start the client, just go to the `client` folder and run the command `npm start`. The client will start listening on `http://localhost:4200/`. 
 
 #### Have fun !
+
+![](preview/about.png)

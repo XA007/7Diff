@@ -29,7 +29,7 @@
     "socket.io-client": "^2.2.0",
     "sweetalert": "^2.1.2",
     "sweetalert2": "^8.7.0",
-    "three": "^0.101.1",
+    "three": "^0.125.0",
     "three-gltf-loader": "^1.101.0",
     "threejs-orbit-controls": "^1.0.3",
     "webgl": "0.0.7",
